@@ -1,0 +1,17 @@
+{
+    "manifest_version": 3,
+    "name": "Auto Fill Radio Buttons",
+    "version": "1.0",
+    "description": "Automatically fill radio buttons based on user input.",
+    "permissions": ["activeTab", "scripting"],
+    "action": {
+      "default_popup": "popup.html"
+    },
+    "content_scripts": [
+      {
+        "matches": ["<all_urls>"],
+        "js": ["content.js"]
+      }
+    ]
+  }
+  
